@@ -1,0 +1,5 @@
+<select ngModel name="select" (change)="change()">
+  <option *ngFor="let option of options;trackBy: trackByFn" [value]="option.id">
+    {{option.name}}
+  </option>
+</select>
